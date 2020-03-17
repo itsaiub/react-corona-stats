@@ -1,7 +1,7 @@
 import React, { useReducer, createContext } from "react";
 import useCombinedReducers from "use-combined-reducers";
-import { countryReducer, initialCountryState } from "./country/reducers";
-import { worldReducer, initialWorldState } from "./world/reducers";
+import { countryReducer, initialCountryState } from "./country/countryReducers";
+import { worldReducer, initialWorldState } from "./world/worldReducers";
 
 export const GlobalContext = createContext(null);
 

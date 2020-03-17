@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import ReactFlagsSelect from "react-flags-select";
 import "react-flags-select/css/react-flags-select.css";
-import { GlobalContext } from "../context/index";
-import { fetchCountryData } from "../context/country/actions";
+import { GlobalContext } from "../context";
+import { fetchCountryData } from "../context/country/countryActions";
 
 const CountrySelect = () => {
   const { world, dispatch } = useContext(GlobalContext);

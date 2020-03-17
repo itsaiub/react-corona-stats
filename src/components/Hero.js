@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import { GlobalContext } from "../context/index";
+import { GlobalContext } from "../context";
 import { ReactComponent as CoronaLogoSvg } from "./assets/corona-logo.svg";
 
 import CountrySelect from "./CountrySelect";
 
-import { fetchWorldData } from "../context/world/actions";
+import { fetchWorldData } from "../context/world/worldActions";
 
 import State from "./State";
 
