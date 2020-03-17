@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { GlobalContext } from "../context";
+import { GlobalContext } from "../context/globalState";
 import { ReactComponent as CoronaLogoSvg } from "./assets/corona-logo.svg";
 
 import CountrySelect from "./CountrySelect";
