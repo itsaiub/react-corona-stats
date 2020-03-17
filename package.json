@@ -20,7 +20,7 @@
     "build": "yarn run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:style": "tailwind build src/styles/tailwind.css -c ./tailwind.config.js -o src/styles/main.css",
+    "build:css": "tailwind build src/styles/tailwind.css -c ./tailwind.config.js -o src/styles/main.css",
     "watch:css": "tailwind build src/styles/tailwind.css -c ./tailwind.config.js -o src/styles/main.css"
   },
   "eslintConfig": {
