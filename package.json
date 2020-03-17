@@ -16,8 +16,8 @@
     "use-combined-reducers": "^1.0.4"
   },
   "scripts": {
-    "start": "npm run watch:css && react-scripts start",
-    "build": "npm run build:css && react-scripts build",
+    "start": "yarn run watch:css && react-scripts start",
+    "build": "yarn run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:style": "tailwind build src/styles/tailwind.css -c ./tailwind.config.js -o src/styles/main.css",
