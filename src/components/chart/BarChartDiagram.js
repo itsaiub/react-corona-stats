@@ -28,7 +28,41 @@ const data = [
 ];
 
 const BarChartDiagram = () => {
-  return <div></div>;
+  return (
+    <div>
+      <ResponsiveContainer width={700} height="80%">
+        <BarChart
+          data={data}
+          margin={{
+            top: 15,
+            right: 30,
+            left: 20,
+            bottom: 5
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis
+            label="Height"
+            dataKey="name"
+            padding={{ left: 10, right: 10 }}
+          />
+          <YAxis
+            label={{
+              x: 100,
+              value: "pv of page",
+              angle: -90,
+              position: "insideLeft"
+            }}
+          />
+          <Tooltip content={<CustomTooltip />} />
+          <Legend />
+          <Bar dataKey="number" barSize={60} fill="#8884d8">
+            <LabelList dataKey="number" position="top" />
+          </Bar>
+        </BarChart>
+      </ResponsiveContainer>
+    </div>
+  );
 };
 
 export default BarChartDiagram;
