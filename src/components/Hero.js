@@ -71,7 +71,7 @@ const Header = () => {
         Data source from&nbsp;
         <a
           className="text-blue-600"
-          href="https://github.com/mathdroid/covid-19-api"
+          href="https://covid19.mathdro.id/api"
           target="_blank"
           rel="noopener noreferrer"
         >
