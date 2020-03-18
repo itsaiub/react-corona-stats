@@ -14,7 +14,7 @@ const State = ({ title = "", data, loading, error }) => {
   }
 
   return (
-    <div className="md:px-0 px-2 text-center">
+    <div className="md:px-0 px-2 flex flex-col text-center items-center justify-center">
       <h1
         className={`${
           title === "" ? "hidden" : "block"

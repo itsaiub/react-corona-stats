@@ -7,7 +7,7 @@ const Header = () => {
     <nav className="flex items-center justify-between w-full flex-wrap py-4 lg:px-16 px-4 bg-blue-800 z-10 text-gray-300 fixed top-0 left-0 w-full">
       <div>
         {/* className={`${isOpen ? "w-full" : "w-auto"}`} */}
-        <h1 className="text-3xl font-semibold font-serif">Corona Update</h1>
+        <h1 className="text-2xl font-semibold font-serif">Corona Update</h1>
       </div>
 
       <div className={`block ${isOpen ? "lg:hidden" : "block"}  lg:hidden`}>
