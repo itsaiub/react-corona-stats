@@ -10,7 +10,7 @@ const App = () => {
       <Header />
       <div
         style={{ minWidth: "90vw", top: "100px" }}
-        className="container mx-auto absolute  lg:mt-4"
+        className="lg:container mx-auto absolute  lg:mt-4"
       >
         <Hero />
       </div>

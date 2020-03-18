@@ -14,11 +14,11 @@ const State = ({ title = "", data, loading, error }) => {
   }
 
   return (
-    <>
+    <div className="md:px-0 px-2 text-center">
       <h1
         className={`${
           title === "" ? "hidden" : "block"
-        } text-3xl font-semibold font-serif mt-10`}
+        } text-2xl md:text-3xl font-semibold font-serif mt-10 text-center`}
       >
         {title}
       </h1>
@@ -26,14 +26,14 @@ const State = ({ title = "", data, loading, error }) => {
         <Loading />
       ) : (
         <>
-          <p className="text-blue-600 mt-1">
-            Last updatedt:&nbsp;
+          <p className="text-blue-600 mt-1 ">
+            Last updated:&nbsp;
             {formatDateAndTime(new Date(data.lastUpdate), "d-M-y h:m:s:t")}
           </p>
           {data.confirmed !== undefined && <Card data={data} />}
         </>
       )}
-    </>
+    </div>
   );
 };
 

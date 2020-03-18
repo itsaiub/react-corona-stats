@@ -33,8 +33,6 @@ const Hero = () => {
 
   const { world, country, dispatch } = useContext(GlobalContext);
 
-  console.log(country);
-
   return (
     <section className="flex justify-center items-center flex-col">
       <Header />
@@ -57,7 +55,7 @@ const Hero = () => {
 
 const Header = () => {
   return (
-    <>
+    <div className="flex justify-center items-center flex-col px-2 text-center">
       <CoronaLogoSvg
         fill="blue"
         x="100px"
@@ -66,8 +64,10 @@ const Header = () => {
         height="150px"
         className="coronaLogo"
       />
-      <h1 className="text-3xl font-semibold font-serif">Covid-19 Outbreak</h1>
-      <p className="mt-1">
+      <h1 className="text-2xl md:text-3xl font-semibold font-serif">
+        Covid-19 Outbreak
+      </h1>
+      <p className="mt-1 text-sm md:text-lg">
         Data source from&nbsp;
         <a
           className="text-blue-600"
@@ -79,7 +79,7 @@ const Header = () => {
         </a>
         API
       </p>
-    </>
+    </div>
   );
 };
 
