@@ -57,7 +57,7 @@ const Header = () => {
   return (
     <div className="flex justify-center items-center flex-col px-2 text-center">
       <CoronaLogoSvg
-        fill="blue"
+        fill="red"
         x="100px"
         y="100px"
         width="150px"
