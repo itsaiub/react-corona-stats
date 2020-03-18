@@ -1,20 +1,26 @@
 import React from "react";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
+import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import ChartPage from "./pages/ChartPage";
 
 import "./styles/custom.css";
 
 const App = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
-      <Header />
-      <div
-        style={{ minWidth: "90vw", top: "100px" }}
-        className="lg:container mx-auto absolute  lg:mt-4"
-      >
-        <Hero />
-      </div>
-    </div>
+    <>
+      <Router>
+        <Header />
+        <main className="container mt-20 flex-1 flex justify-center items-center flex-col">
+          <Switch>
+            <Route path="/chart" exact component={ChartPage} />
+            <Route path="/" component={HomePage} />
+          </Switch>
+        </main>
+        <Footer />
+      </Router>
+    </>
   );
 };
 

@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/globalState";
-import { ReactComponent as CoronaLogoSvg } from "./assets/corona-logo.svg";
+import { ReactComponent as CoronaLogoSvg } from "../components/assets/corona-logo.svg";
 
-import CountrySelect from "./CountrySelect";
+import CountrySelect from "../components/CountrySelect";
 
 import { fetchWorldData } from "../context/world/worldActions";
 
-import State from "./State";
+import State from "../components/State";
 
-const Hero = () => {
+const HomePage = () => {
   React.useEffect(() => {
     let isCancelled = false;
     const runAsync = async () => {
@@ -34,7 +34,7 @@ const Hero = () => {
   const { world, country, dispatch } = useContext(GlobalContext);
 
   return (
-    <section className="flex justify-center items-center flex-col">
+    <>
       <Header />
       <State
         title="Global Case"
@@ -49,7 +49,7 @@ const Hero = () => {
         loading={country.loading}
         error={country.error}
       />
-    </section>
+    </>
   );
 };
 
@@ -83,4 +83,4 @@ const Header = () => {
   );
 };
 
-export default Hero;
+export default HomePage;
