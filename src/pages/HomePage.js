@@ -67,7 +67,7 @@ const Header = () => {
       <h1 className="text-2xl md:text-3xl font-semibold font-serif">
         Covid-19 Outbreak
       </h1>
-      <p className="mt-1 text-sm md:text-lg">
+      {/* <p className="mt-1 text-sm md:text-lg">
         Data source from&nbsp;
         <a
           className="text-blue-600"
@@ -78,7 +78,7 @@ const Header = () => {
           Muhammad Mustadi's&nbsp;
         </a>
         API
-      </p>
+      </p> */}
     </div>
   );
 };
